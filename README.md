@@ -1,53 +1,57 @@
-# Signalement d'Incidents - Application Mobile avec Flutter
 
+# Incident Reporting - Mobile Application with Flutter
 
 ## Description
 
-L'application **Signalement d'Incidents** est une application mobile développée avec le SDK Flutter qui permet aux utilisateurs de signaler les problèmes qui surviennent dans leurs régions, tels que des feux de signalisation défectueux, des poubelles renversées, etc. L'application utilise l'API Google Maps pour permettre aux utilisateurs de choisir l'emplacement de l'incident sur une carte interactive.
+The **Incident Reporting** application is a mobile app developed using the Flutter SDK. It allows users to report issues occurring in their regions, such as faulty traffic lights, overturned trash bins, and more. The application utilizes the Google Maps API to let users select the incident's location on an interactive map.
 
-## Fonctionnalités Principales
+## Key Features
 
-- Authentification : Les utilisateurs peuvent se connecter ou créer un nouveau compte pour accéder aux fonctionnalités de l'application.
-- Signalement d'Incidents : Les utilisateurs peuvent signaler un incident en choisissant l'emplacement sur la carte, la sévérité de l'incident, le type d'incident, la date et en fournissant une description détaillée.
-- Téléchargement d'Images : Les utilisateurs ont la possibilité de télécharger une image pour accompagner leur signalement d'incident.
-- Tableaux de Bord et Reporting : Des tableaux de bord et des rapports pour l'administrateur sont disponibles pour suivre les incidents signalés et fournir des statistiques sur les types d'incidents les plus courants et leur localisation. Ils ont été développés avec ``Google Locker Studio``
+- **Authentication**: Users can log in or create a new account to access the app's features.
+- **Incident Reporting**: Users can report an incident by selecting the location on the map, the severity of the incident, the type of incident, the date, and providing a detailed description.
+- **Image Upload**: Users can upload an image to accompany their incident report.
+- **Dashboards and Reporting**: Dashboards and reports are available for administrators to monitor reported incidents and provide statistics on the most common types of incidents and their locations. These were developed using `Google Locker Studio`.
 
-## Prérequis
+## Prerequisites
 
 - Flutter SDK
-- IDE (par exemple, Android Studio ou Visual Studio Code)
-- Google Maps API Key (pour utiliser la carte interactive)
+- IDE (e.g., Android Studio or Visual Studio Code)
+- Google Maps API Key (to use the interactive map)
 
 ## Installation
 
-1. Clonez ce dépôt sur votre machine locale.
-2. Assurez-vous d'avoir le SDK Flutter installé et configuré sur votre système.
-3. Configurez votre API Key Google Maps en suivant les instructions fournies par Google.
-4. Ajoutez votre API Key Google Maps dans le fichier `android/app/src/main/AndroidManifest.xml` :
+1. Clone this repository to your local machine.
+2. Ensure the Flutter SDK is installed and configured on your system.
+3. Configure your Google Maps API Key by following the instructions provided by Google.
+4. Add your Google Maps API Key to the file `android/app/src/main/AndroidManifest.xml`:
 
 ```xml
 <meta-data
     android:name="com.google.android.geo.API_KEY"
-    android:value="VOTRE_API_KEY_GOOGLE_MAPS" />
+    android:value="YOUR_GOOGLE_MAPS_API_KEY" />
 ```
-## Exécution du Projet
 
-1. Lancez votre émulateur ou connectez votre appareil Android à l'ordinateur.
-2. Ouvrez le projet dans votre IDE préféré (Android Studio ou Visual Studio Code).
-3. Exécutez la commande suivante pour installer les dépendances :
+## Running the Project
 
-````
+1. Start your emulator or connect your Android device to your computer.
+2. Open the project in your preferred IDE (Android Studio or Visual Studio Code).
+3. Run the following command to install dependencies:
+
+```bash
 flutter pub get
-````
-Ensuite, exécutez l'application avec la commande :
-````
+```
+
+Then, run the application with the command:
+
+```bash
 flutter run
-`````
-Les fichiers .dart ainsi que les widgets sont disponibles dans le dossier `lib`. L'application marche à la fois sur le web, android et IOS. Le serveur utilisé pour héberger l'application est [000webhost](https://www.000webhost.com/)
+```
 
-## Travaux Futurs
+The `.dart` files and widgets are available in the `lib` folder. The application is compatible with the web, Android, and iOS. The server used to host the application is [000webhost](https://www.000webhost.com/).
 
-Pour améliorer l'application "Signalement d'Incidents" et fournir des fonctionnalités avancées, on peut envisager d'intégrer une partie d'intelligence artificielle. Par exemple, développer un modèle de computer vision capable de reconnaître automatiquement le type d'incident à partir de l'image téléchargée par l'utilisateur. Cela permettrait de remplir automatiquement le formulaire de signalement et d'améliorer la détection de la sévérité de l'incident.
+## Future Work
+
+To enhance the "Incident Reporting" application and provide advanced features, we could integrate artificial intelligence. For example, developing a computer vision model capable of automatically recognizing the type of incident from the image uploaded by the user. This would allow automatic completion of the incident report form and improve the detection of the incident's severity.
 
 ## Getting Started
 
