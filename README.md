@@ -18,7 +18,7 @@ The **Incident Reporting** application is a mobile app developed using the Flutt
 
 ## Demo of the app
 <p align="center">
-  <img src="app_demo.gif" alt="App Demo" width="600"/>
+  <img src="app_demo.gif" alt="App Demo" width="300"/>
 </p>
 
 ## Prerequisites
