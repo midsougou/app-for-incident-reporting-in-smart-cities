@@ -1,6 +1,10 @@
 
 # Incident Reporting - Mobile Application with Flutter
 
+<p align="center">
+  <img src="welcome_page.jpg" alt="App Screenshot" width="300"/>
+</p>
+
 ## Description
 
 The **Incident Reporting** application is a mobile app developed using the Flutter SDK. It allows users to report issues occurring in their regions, such as faulty traffic lights, overturned trash bins, and more. The application utilizes the Google Maps API to let users select the incident's location on an interactive map.
@@ -11,6 +15,11 @@ The **Incident Reporting** application is a mobile app developed using the Flutt
 - **Incident Reporting**: Users can report an incident by selecting the location on the map, the severity of the incident, the type of incident, the date, and providing a detailed description.
 - **Image Upload**: Users can upload an image to accompany their incident report.
 - **Dashboards and Reporting**: Dashboards and reports are available for administrators to monitor reported incidents and provide statistics on the most common types of incidents and their locations. These were developed using `Google Locker Studio`.
+
+## Demo of the app
+<p align="center">
+  <img src="app_demo.gif" alt="App Demo" width="600"/>
+</p>
 
 ## Prerequisites
 
